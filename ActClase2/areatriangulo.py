@@ -5,7 +5,7 @@ def main():
     
     area = (b*h)/2
     
-    print (area)
+    print ("el area es",area)
 
 if __name__ == '__main__':
     main()
