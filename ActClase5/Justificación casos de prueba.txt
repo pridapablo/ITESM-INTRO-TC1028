@@ -1,0 +1,19 @@
+Justificación de Casos de prueba
+
+Caso 1
+
+Como primer caso de prueba, se corrió el código de forma ideal utilizando dos valores positivos dentro del rango [0, ∞). De esta manera se pudo demostrar el funcionamiento ideal del código. Podría considerarse el caso control. Cabe resaltar que el hecho de que el tipo de dato esperado sea flotante no significa que no se acepten áreas y rendimientos enteros dado que el programa los convertirá en flotantes automáticamente para poder realizar la operación.
+
+Caso 2
+
+En segunda instancia se utilizaron valores negativos en ambos datos de entrada (que se encuentran fuera del rango esperado para el programa). Utilizamos este caso para comprender la reacción del programa ante números que no hacen sentido dentro del contexto del problema (ya que no existen áreas ni rendimientos negativos). También ayudó para demostrar que el resultado correcto no indica que el código sea correcto.
+
+Caso 3
+
+En un tercer caso se utilizó un valor negativo (un valor fuera del rango esperados) y uno positivo en la entrada de datos para demostrar cómo esto generaría una respuesta inválida dentro del contexto del problema (sucede lo mismo que en el caso 2). Esto nos indica que se debe modificar el código para impedir la entrada de este tipo de datos.
+
+Para el segundo y tercer caso se podría utilizar como solución un ciclo ‘While’ para impedir que se utilicen valores negativos desde un principio.
+
+Caso 4
+
+Cómo último caso se introdujo una cadena de caracteres en vez de un valor numérico lo cual de inmediatamente provocó una falla en el programa. Utilizamos este caso de prueba para demostrar cómo es inválido intentar utilizar un valor que no sea numérico.
