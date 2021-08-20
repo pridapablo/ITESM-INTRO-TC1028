@@ -9,5 +9,10 @@ def area():
 
     area = m.sqrt(s*(s-a)*(s-b)*(s-c))
 
+    #print("area: ", area, "m2")
+
+    return area
+    #otorga el valor de una función
+
 if __name__ == "__main__":
-    print(area())
+    print("area:",area(),"m2")
