@@ -1,6 +1,6 @@
 import math as m
 
-def aurea():
+def phi():
     no_para_multiplicar = float(input("Número: "))
     decimales = int(input("Decimales a mostrar: "))
     
@@ -11,4 +11,4 @@ def aurea():
     print("Razón áurea: "+str(round(resultado,decimales)))
 
 if __name__ == "__main__":
-    aurea()
+    phi()
