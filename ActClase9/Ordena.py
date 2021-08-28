@@ -1,17 +1,33 @@
+def sortcond():
+    x = int(input("Ingresa el primer número: "))
+    y = int(input("Ingresa el segundo número: "))
+    z = int(input("Ingresa el tercer número: "))
 
-def mayor3(n1,n2,n3):
-    if n1>n2 and n1>n3:
-       mayor = n1
-    elif n2>n1 and n2>n3:
-        mayor = n2
-    elif n3>n1 and n3>n2:
-        mayor = n3
-    elif n1<n2 and n1<n3:
-        menor = n1
-    elif n2<n1 and n2<n3:
-        mayor = n2
-    elif n3>n1 and n3>n2:
-        mayor = n3
-    else:
-        print ("los tres numeros son iguales")
+
+    if x > y and x > z:
+        mayor = x
+    elif y > x and y > z:
+        mayor = y
+    elif z > x and z > y:
+        mayor = z
+
+    if x < y and x < z:
+        menor = x
+    elif y < x and y < z:
+        menor = y
+    elif z < x and z < y:
+        menor = z
+
+    if x < mayor and x > menor:
+        medio = x
+    elif y < mayor and y > menor:
+        medio = y
+    elif z < mayor and z > menor:
+        medio = z
     
+    print(menor)
+    print(medio)
+    print(mayor)
+
+if __name__ == "__main__":
+    sortcond()
