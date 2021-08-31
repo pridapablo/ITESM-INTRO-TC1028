@@ -9,15 +9,16 @@ def pto():
     y1 =  float(input("Introduce y1: "))
     y2 =  float(input("Introduce y2: "))
 
-    # 
+    distancia = m.sqrt(abs(((x1-x2)**2)-(y1-y2)**2))
+    # distancia entre dos puntos: cambio en x^2 + cambio en y^2 
 
-    if ():
+    if (distancia < radio):
         return "DENTRO"
 
-    if ():
+    if (distancia > radio):
         return "FUERA"
 
-    if ():
+    if (distancia == radio):
         return "SOBRE"
 
 if __name__ == "__main__":
