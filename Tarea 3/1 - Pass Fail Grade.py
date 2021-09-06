@@ -8,8 +8,10 @@
 # Pass
 
 def check_grade(grade):
-    # escribe tu código abajo de esta línea
-    pass
+    if grade >= 70:
+        return "Pass"
+    elif grade < 70:
+        return "Fail"
 
 
 def main():

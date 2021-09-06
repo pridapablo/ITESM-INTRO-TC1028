@@ -8,15 +8,23 @@
 # 9
 
 def largest_of_three(a, b, c):
-    # Write your code here
-    pass
+    if a > b and a > c:
+        grande = a
+    elif b > c and b > a:
+        grande = b
+    elif c > b and c > a:
+        grande = c
+    elif a == b and a == c:
+        return "Los 3 números son iguales"
+
+    return grande
 
 
 def main():
     a = int(input("Enter first number: "))
     b = int(input("Enter second number: "))
     c = int(input("Enter third number: "))
-    print(check_grade(a, b, c))
+    print(largest_of_three(a, b, c))
 
 
 if __name__ == '__main__':

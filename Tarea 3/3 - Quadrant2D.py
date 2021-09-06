@@ -12,8 +12,20 @@
 # The point is in quadrant: Origin
 
 def quadrant(x, y):
-    # Write your code here
-    pass
+    if x == 0 and y == 0:
+        return "Origin" 
+    elif x == 0:
+        return "X axis"
+    elif y == 0:
+        return "Y axis"
+    elif x > 0 and y > 0:
+        return "I"
+    elif x < 0 and y > 0:
+        return "II"
+    elif x < 0 and y < 0:
+        return "III"
+    elif x > 0 and y < 0:
+        return "IV"
 
 
 def main():
