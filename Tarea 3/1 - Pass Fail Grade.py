@@ -8,11 +8,14 @@
 # Pass
 
 def check_grade(grade):
-    if grade >= 70:
-        return "Pass"
-    elif grade < 70:
-        return "Fail"
 
+    if grade >= 0 and grade <= 100:
+        if grade >= 70:
+            return "Pass"
+        elif grade < 70:
+            return "Fail"
+    else:
+        return "Domain Error"
 
 def main():
     grade = int(input("Enter grade: "))

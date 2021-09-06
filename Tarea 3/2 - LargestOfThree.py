@@ -10,7 +10,15 @@
 def largest_of_three(a, b, c):
     if a > b and a > c:
         grande = a
+    elif a == b and a > c:
+        grande = a
+    elif a == c and a > b:
+        grande = a
     elif b > c and b > a:
+        grande = b
+    elif b == c and b > a:
+        grande = b
+    elif b == a and b > c:
         grande = b
     elif c > b and c > a:
         grande = c
