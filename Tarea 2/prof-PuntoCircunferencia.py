@@ -1,3 +1,4 @@
+import math
 def main():
 
        # Escribe tu código abajo de esta línea
