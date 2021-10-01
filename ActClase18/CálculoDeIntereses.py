@@ -11,7 +11,7 @@ def intereses(c,p):
         for i in range(12):
             c = (1+p_mensual_y_decimal) * c
 
-        print("$"+str(c))
+        print("$"+str(round(c,2)))
 
     else:
         print("Error en los datos")
