@@ -8,7 +8,7 @@ def main():
     cont = 1
     n = int(input("Escribe un número: "))
 
-    while (cont ** 2) < n:
+    while (cont ** 2) <= n:
         cont = cont + 1
 
     print(cont)
