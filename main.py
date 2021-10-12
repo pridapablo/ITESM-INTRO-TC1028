@@ -1,3 +1,3 @@
 #main.py
 import os
-os.system('python3 Tarea-6/Ej1.py')
+os.system('python3 Practica-Examen-3/RETO-Combina-listas.py')
