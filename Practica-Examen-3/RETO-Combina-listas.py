@@ -23,15 +23,34 @@ def main():
 
   combo = []
 
-  for i in range(len(L1)):
-    if (i % 2) == 0:
-      combo.append(L1[i])
-    else: combo[i] = None
+  long1=len(L1)
+  long2=len(L2)
+  
+  if long1<long2:
+    rang_inv= -1 * ((long2+1)-(long1+1))
 
-  for i in range(len(L2)):
-    if (i % 2) != 0:
+    for i in range(long1):
+      combo.append(L1[i])
       combo.append(L2[i])
 
+    for i in range(rang_inv,0):
+      combo.append(L2[i])
+    
+  elif long2<long1:
+    rang_inv= -1 *((long1+1)-(long2+1))
+
+    for i in range(long2):
+      combo.append(L1[i])
+      combo.append(L2[i])
+
+    for i in range(rang_inv,0):
+      combo.append(L1[i])
+
+  else:
+    for i in range(long2):
+      combo.append(L1[i])
+      combo.append(L2[i])
+      
   print(combo)
 
 if __name__ == "__main__":
