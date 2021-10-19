@@ -23,11 +23,14 @@ def main():
 
   combo = []
 
-  for i in range(0,(len(L1)//2),2):
-    combo.append(L1[i])
+  for i in range(len(L1)):
+    if (i % 2) == 0:
+      combo.append(L1[i])
+    else: combo[i] = None
 
-  for i in range(1,len(L2)//2,2):
-    combo.append(L2[i])
+  for i in range(len(L2)):
+    if (i % 2) != 0:
+      combo.append(L2[i])
 
   print(combo)
 
