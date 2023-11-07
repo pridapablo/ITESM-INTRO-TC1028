@@ -1,4 +1,4 @@
-# ITESM-TC1028
+# ITESM-INTRO-TC1028
 
 ## Course Information
 **Institution:** Tecnológico de Monterrey  
